@@ -199,6 +199,7 @@
 #region Arrays
 
 
+
 // string[] names = { "Rashad", "Nihad", "Durdane", "Kamran", "Aysel" };
 // int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
@@ -237,7 +238,7 @@
 //       System.Console.WriteLine(item);
 // }
 
-double[] numbers = { 200.5, 10, 20, 3, 1, 5, 6, 7, 8, 9, 10 };
+// double[] numbers = { 200.5, 10, 20, 3, 1, 5, 6, 7, 8, 9, 10 };
 
 
 // Array.Sort(numbers);
@@ -260,5 +261,81 @@ double[] numbers = { 200.5, 10, 20, 3, 1, 5, 6, 7, 8, 9, 10 };
 // {
 //       System.Console.WriteLine(item);
 // }
+
+#endregion
+
+
+#region Topics
+// Input
+// Type Conversion
+// String Interpolation
+// Big O Notation
+#endregion
+
+
+
+#region Input Type Conversion
+
+// Console.Write("Ilk ededi daxil edin: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Ikinci ededi daxil edin: ");
+// int b = int.Parse(Console.ReadLine());
+// Console.WriteLine($"Ededlerin cemi: {a + b}");
+
+/////////
+
+// System.Console.Write("Nece eded daxil etmek isteyirsiniz?");
+// int n = int.Parse(Console.ReadLine());
+// int[] number = new int[n];
+
+// for (int i = 0; i < number.Length; i++)
+// {
+//       Console.Write($"Ededleri daxil edin {i + 1}/{n}: ");
+//       number[i] = int.Parse(Console.ReadLine());
+// }
+
+// foreach (int item in number)
+// {
+//       Console.WriteLine(item);
+// }
+
+
+// string[] students = new string[5];
+
+
+// for (int i = 0; i < students.Length; i++)
+// {
+//       System.Console.WriteLine("Telebenin adini daxil edin: ");
+//       students[i] = Console.ReadLine();
+// }
+
+// foreach (string student in students)
+// {
+//       System.Console.WriteLine(student);
+// }
+
+// int[] arr = { 4, 2, 3, 7, 1, 5, 6, 8, 9, 10 };
+
+// for (int i = 0; i < arr.Length; i++)
+// {
+//       if (arr[i] == 9)
+//       {
+//             System.Console.WriteLine(arr[i]);
+//       }
+// }
+
+#endregion
+
+#region Big O Notation
+
+
+// for (int i = 0; i < 100; i++)
+// {
+//       for (int j = 0; j < 50; j++)
+//       {
+//             System.Console.WriteLine(i + " " + j);
+//       }
+// }
+
 
 #endregion
