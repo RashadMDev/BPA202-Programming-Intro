@@ -198,8 +198,6 @@
 
 #region Arrays
 
-
-
 // string[] names = { "Rashad", "Nihad", "Durdane", "Kamran", "Aysel" };
 // int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
@@ -264,15 +262,12 @@
 
 #endregion
 
-
 #region Topics
 // Input
 // Type Conversion
 // String Interpolation
 // Big O Notation
 #endregion
-
-
 
 #region Input Type Conversion
 
@@ -337,5 +332,129 @@
 //       }
 // }
 
+#endregion
+
+#region Data Structures
+//List
+// List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 20, 30, 40, 50 };
+// numbers.Add(10);
+
+// numbers.Remove(3);
+
+// numbers.Insert(7, 10);
+
+// System.Console.WriteLine(numbers.Contains(10));
+
+
+// foreach (int item in numbers)
+// {
+//       System.Console.WriteLine(item);
+// }
+
+
+//Linked List
+
+// LinkedList<string> cities = new LinkedList<string>();
+
+
+
+// cities.AddFirst("London");
+// cities.AddFirst("New York");
+// cities.AddLast("Baku");
+// cities.AddFirst("Los Angeles");
+
+
+// foreach (string city in cities)
+// {
+//       System.Console.WriteLine(city);
+
+// }
+
+// for (int i = 0; i < cities.Count; i++)
+// {
+
+// }
+
 
 #endregion
+
+
+// int[] randomNumbers = { 1000, 1, 2, 8, 3, 4, 5, -1, 6, 7, 8, -2000, 9, 10, 11 };
+
+// Array.Sort(randomNumbers);
+
+// foreach (int item in randomNumbers)
+// {
+//       System.Console.WriteLine(item);
+// }
+
+// int[] ints = { 8, 1, 5, 9, 20, 2, 3, 50, 77, 33 };
+
+
+#region Bubble Sort
+
+
+
+// int[] numbers = { 8, 1, 5, 9, 20, 2, 3, 50, 77, 33 };
+// int temp = 0;
+// int step = 0;
+
+
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//       for (int j = 0; j < numbers.Length - 1 - i; j++)
+//       {
+//             step++;
+//             if (numbers[j] > numbers[j + 1])
+//             {
+//                   temp = numbers[j];
+//                   numbers[j] = numbers[j + 1];
+//                   numbers[j + 1] = temp;
+//             }
+//       }
+// }
+
+// foreach (int number in numbers)
+// {
+//       System.Console.WriteLine(number);
+// }
+// System.Console.WriteLine($"Steps: {step}");
+
+
+
+#endregion
+
+#region Binary Search
+
+
+// int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20, 33, 50, 77 };
+// int target = 80;
+// int low = 0;
+// int high = numbers.Length - 1;
+
+// while (low <= high)
+// {
+//       int mid = (low + high) / 2;
+//       if (numbers[mid] == target)
+//       {
+//             System.Console.WriteLine($"Target {target} found at index {mid}");
+//             break;
+//       }
+//       else if (numbers[mid] < target) low = mid + 1;
+//       else high = mid - 1;
+// }
+
+
+#endregion
+
+
+using System.Text.RegularExpressions;
+
+string email = "rashadmmdov@gmail.com";
+
+string pattern = @"^[\w\.-]+@[\w\.-]+\.\w+$";
+
+if (Regex.IsMatch(email, pattern))
+      Console.WriteLine("Email düzgündür.");
+else
+      Console.WriteLine("Email formatı yanlışdır.");
